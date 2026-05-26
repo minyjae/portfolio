@@ -1,0 +1,196 @@
+"use client";
+
+import Lenis from "lenis";
+import Image from "next/image";
+import { useEffect } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { RevealOnScroll } from "@/app/components/RevealOnScroll";
+
+const page = () => {
+  useEffect(() => {
+    const lenis = new Lenis({
+      lerp: 0.1,
+      orientation: "vertical",
+      wheelMultiplier: 1.2,
+    });
+
+    lenis.scrollTo(0, { immediate: true });
+
+    const raf = (time: number) => {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    };
+
+    requestAnimationFrame(raf);
+
+    lenis.on("scroll", ScrollTrigger.update);
+
+    return () => lenis.destroy();
+  }, []);
+
+  return (
+    <>
+      <div className="tw:flex tw:flex-col tw:justify-center tw:items-center tw:min-h-screen tw:gap-4 tw:px-6">
+        <h1 className="tw:text-6xl tw:font-extrabold tw:tracking-tight tw:bg-linear-to-r tw:from-violet-500 tw:via-fuchsia-500 tw:to-pink-500 tw:bg-clip-text tw:text-transparent tw:select-none tw:md:text-center">
+          Welcome To Jiradate Portfolio
+        </h1>
+        <p className="tw:text-lg tw:text-neutral-400 tw:tracking-widest tw:uppercase">
+          Fullstack Developer | Backend Developer
+        </p>
+      </div>
+
+      <RevealOnScroll>
+        <div className="tw:flex tw:md:flex-row tw:flex-col tw:justify-center tw:items-center tw:min-h-screen tw:gap-4 tw:lg:px-0 tw:px-4">
+          <div className="tw:relative tw:w-80 tw:h-96 tw:rounded-2xl tw:overflow-hidden">
+            <Image
+              src="/IMG_1552.JPG"
+              alt="my-self"
+              fill
+              className="tw:object-cover"
+            />
+          </div>
+
+          <div className="tw:md:flex tw:md:flex-col tw:gap-6 tw:max-w-sm tw:h-96 tw:bg-neutral-900 tw:p-4 tw:rounded-2xl">
+            <span className="tw:text-xl tw:font-semibold tw:tracking-widest tw:uppercase tw:text-violet-400">
+              About Me
+            </span>
+            <p className="tw:text-base tw:leading-relaxed tw:text-neutral-300">
+              Computer Engineering graduate from Chiang Mai University with
+              hands-on experience in full-stack web development and cloud
+              infrastructure. Proficient in TypeScript, Vue.js, NestJS, and Go,
+              with practical exposure to AWS, Terraform, and Ansible through a
+              production internship. Passionate about building clean, scalable
+              software and eager to contribute as a full-time software engineer.
+            </p>
+          </div>
+        </div>
+      </RevealOnScroll>
+
+      <RevealOnScroll>
+        <div className="tw:flex tw:flex-col tw:justify-center tw:items-center tw:min-h-screen tw:px-6 tw:py-20">
+          <div className="tw:grid tw:grid-cols-1 tw:md:grid-cols-2 tw:lg:grid-cols-3 tw:gap-4 tw:w-full tw:max-w-4xl">
+            {/* Education — full on mobile, 2 col on md+ */}
+            <div className="tw:md:col-span-2 tw:bg-neutral-900 tw:rounded-2xl tw:p-6 tw:flex tw:flex-col tw:gap-3">
+              <span className="tw:text-xs tw:font-semibold tw:tracking-widest tw:uppercase tw:text-violet-400">
+                Education
+              </span>
+              <p className="tw:text-xl tw:font-bold tw:text-white">
+                Chiang Mai University
+              </p>
+              <p className="tw:text-sm tw:text-neutral-400">
+                B.Eng. Computer Engineering · 2021 – 2026
+              </p>
+              <p className="tw:text-sm tw:text-neutral-500 tw:leading-relaxed">
+                Focused on software engineering, data engineering, and cloud
+                systems. Completed a senior project building a dashboard web
+                application for managing operations within the Lifelong Education
+                organization at Chiang Mai University.
+              </p>
+            </div>
+
+            {/* Skills — 1 col */}
+            <div className="tw:bg-neutral-900 tw:rounded-2xl tw:p-6 tw:flex tw:flex-col tw:gap-3">
+              <span className="tw:text-xs tw:font-semibold tw:tracking-widest tw:uppercase tw:text-fuchsia-400">
+                Skills
+              </span>
+              <div className="tw:flex tw:flex-wrap tw:gap-2">
+                {[
+                  "TypeScript",
+                  "JavaScript",
+                  "Vue.js",
+                  "NestJS",
+                  "Go",
+                  "Python",
+                  "AWS",
+                  "Terraform",
+                  "Terrgrunt",
+                  "Docker",
+                ].map((skill) => (
+                  <span
+                    key={skill}
+                    className="tw:text-xs tw:bg-neutral-800 tw:text-neutral-300 tw:px-2 tw:py-1 tw:rounded-md"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Experience — 1 col */}
+            <div className="tw:bg-neutral-900 tw:rounded-2xl tw:p-6 tw:flex tw:flex-col tw:gap-3">
+              <span className="tw:text-xs tw:font-semibold tw:tracking-widest tw:uppercase tw:text-pink-400">
+                Experience
+              </span>
+              <p className="tw:text-base tw:font-bold tw:text-white">
+                Software Engineer Intern
+              </p>
+              <p className="tw:text-sm tw:text-neutral-400">
+                Migrated a legacy website from AdonisJS to NestJS and implemented
+                a new frontend theme based on the company&apos;s UX/UI design
+                specifications.
+              </p>
+            </div>
+
+            {/* Soft Skills — 1 col */}
+            <div className="tw:bg-linear-to-br tw:from-violet-500/20 tw:to-pink-500/20 tw:border tw:border-violet-500/30 tw:rounded-2xl tw:p-6 tw:flex tw:flex-col tw:gap-3">
+              <span className="tw:text-xs tw:font-semibold tw:tracking-widest tw:uppercase tw:text-violet-400">
+                Soft Skills
+              </span>
+              <p className="tw:text-base tw:font-bold tw:text-white">
+                Curious & Inquisitive
+              </p>
+              <p className="tw:text-sm tw:text-neutral-400">
+                Naturally driven to ask questions and dig into the
+                &ldquo;why&rdquo; — I explore problems thoroughly before jumping
+                to solutions.
+              </p>
+            </div>
+
+            {/* Contact — 1 col */}
+            <div className="tw:bg-linear-to-br tw:from-fuchsia-500 tw:to-pink-500 tw:rounded-2xl tw:p-6 tw:flex tw:flex-col tw:justify-between">
+              <span className="tw:text-xs tw:font-semibold tw:tracking-widest tw:uppercase tw:text-white/70">
+                Contact
+              </span>
+              <div>
+                <p className="tw:text-base tw:font-bold tw:text-white">
+                  Open to work
+                </p>
+                <p className="tw:text-sm tw:text-white/70">
+                  jiradate01@gmail.com
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </RevealOnScroll>
+
+      <RevealOnScroll>
+        <div className="tw:flex tw:flex-col tw:justify-center tw:items-center tw:min-h-screen">
+          <div className="tw:grid tw:grid-cols-2 tw:w-full tw:max-w-4xl tw:gap-4">
+            <div className="tw:relative tw:aspect-3/4 tw:rounded-2xl tw:overflow-hidden">
+              <Image
+                src="/IMG_1552.JPG"
+                alt="my-self"
+                fill
+                className="tw:object-cover"
+              />
+            </div>
+
+            <div className="tw:bg-neutral-900 tw:p-4 tw:rounded-2xl">
+              <span className="tw:font-semibold tw:uppercase tw:text-violet-400 tw:text-2xl">Lifelong Staff Assistant Website
+                <p className="tw:text-gray-500 tw:text-sm">
+                  Techstack : Next.js, Go, AWS, REST API
+                </p>
+              </span>
+              <span>
+                Architected and deployed a Go-based web application on AWS that enables staff to manage instructor-submitted course data and track course approval status end-to-end via a REST API backend.
+              </span>
+            </div>
+          </div>
+        </div>
+      </RevealOnScroll>
+    </>
+  );
+};
+
+export default page;
