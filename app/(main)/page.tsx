@@ -46,6 +46,7 @@ const page = () => {
               src="/IMG_1552.JPG"
               alt="my-self"
               fill
+              sizes="320px"
               className="tw:object-cover"
             />
           </div>
@@ -165,13 +166,14 @@ const page = () => {
       </RevealOnScroll>
 
       <RevealOnScroll>
-        <div className="tw:flex tw:flex-col tw:justify-center tw:items-center tw:min-h-screen">
-          <div className="tw:grid tw:grid-cols-2 tw:w-full tw:max-w-4xl tw:gap-4">
+        <div className="tw:flex tw:flex-col tw:justify-center tw:items-center tw:min-h-screen tw:px-6 tw:mb-4 tw:md:mb-0">
+          <div className="tw:grid tw:grid-cols-1 tw:md:grid-cols-2 tw:w-full tw:max-w-4xl tw:gap-4">
             <div className="tw:relative tw:aspect-3/4 tw:rounded-2xl tw:overflow-hidden">
               <Image
                 src="/Screenshot 2026-05-27 162822.png"
                 alt="my-self"
                 fill
+                sizes="(max-width: 768px) 100vw, 448px"
                 className="tw:object-cover"
               />
             </div>
@@ -217,13 +219,14 @@ const page = () => {
       </RevealOnScroll>
 
       <RevealOnScroll>
-        <div className="tw:flex tw:flex-col tw:justify-center tw:items-center tw:min-h-screen">
-          <div className="tw:grid tw:grid-cols-2 tw:w-full tw:max-w-4xl tw:gap-4">
+        <div className="tw:flex tw:flex-col tw:justify-center tw:items-center tw:min-h-screen tw:px-6 tw:mb-4 tw:md:mb-0">
+          <div className="tw:grid tw:grid-cols-1 tw:md:grid-cols-2 tw:w-full tw:max-w-4xl tw:gap-4">
             <div className="tw:relative tw:aspect-3/4 tw:rounded-2xl tw:overflow-hidden">
               <Image
                 src="/Screenshot 2026-05-27 203048.png"
                 alt="my-self"
                 fill
+                sizes="(max-width: 768px) 100vw, 448px"
                 className="tw:object-cover"
               />
             </div>
