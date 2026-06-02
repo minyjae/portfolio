@@ -123,7 +123,7 @@ const page = () => {
                 Experience
               </span>
               <p className="tw:text-base tw:font-bold tw:text-white">
-                Software Engineer Intern
+                Fullstack Developer Intern
               </p>
               <p className="tw:text-sm tw:text-neutral-400">
                 Migrated a legacy website from AdonisJS to NestJS and implemented
@@ -193,6 +193,16 @@ const page = () => {
                 </p>
                 <p className="tw:text-neutral-500">
                   Built with Go (REST API), Next.js, and PostgreSQL.
+                </p>
+
+                <h3>
+                  For Testing
+                </h3>
+                <p>
+                  Email : test@gmail.com
+                </p>
+                <p>
+                  Password : 1234test
                 </p>
               </div>
               <div className="tw:mt-auto tw:flex tw:gap-2">
