@@ -84,8 +84,8 @@ const page = () => {
               <p className="tw:text-sm tw:text-neutral-500 tw:leading-relaxed">
                 Focused on software engineering, data engineering, and cloud
                 systems. Completed a senior project building a dashboard web
-                application for managing operations within the Lifelong Education
-                organization at Chiang Mai University.
+                application for managing operations within the Lifelong
+                Education organization at Chiang Mai University.
               </p>
             </div>
 
@@ -126,9 +126,9 @@ const page = () => {
                 Fullstack Developer Intern
               </p>
               <p className="tw:text-sm tw:text-neutral-400">
-                Migrated a legacy website from AdonisJS to NestJS and implemented
-                a new frontend theme based on the company&apos;s UX/UI design
-                specifications.
+                Migrated a legacy website from AdonisJS to NestJS and
+                implemented a new frontend theme based on the company&apos;s
+                UX/UI design specifications.
               </p>
             </div>
 
@@ -179,31 +179,34 @@ const page = () => {
             </div>
 
             <div className="tw:bg-neutral-900 tw:p-4 tw:rounded-2xl tw:flex tw:flex-col tw:gap-3">
-              <span className="tw:font-semibold tw:uppercase tw:text-violet-400 tw:text-2xl">Lifelong Staff Assistant Website
+              <span className="tw:font-semibold tw:uppercase tw:text-violet-400 tw:text-2xl">
+                Lifelong Staff Assistant Website
                 <p className="tw:text-gray-500 tw:text-sm">
-                  Techstack : Next.js, Go, AWS, REST API
+                  Techstack : Next.js, Go, AWS, REST API, Postgresql
                 </p>
               </span>
               <div className="tw:flex tw:flex-col tw:gap-2 tw:text-sm tw:text-neutral-300">
                 <p>
-                  A senior capstone project developed in collaboration with CMU Lifelong Education to replace a manual, Excel-based workflow for managing course opening requests — a process that made it difficult for faculty to track progress and for administrators to maintain records.
+                  A senior capstone project developed in collaboration with CMU
+                  Lifelong Education to replace a manual, Excel-based workflow
+                  for managing course opening requests — a process that made it
+                  difficult for faculty to track progress and for administrators
+                  to maintain records.
                 </p>
                 <p>
-                  The system allows admins to submit and manage course data through a dedicated dashboard, control user permissions by role, and provides real-time status visibility — eliminating the back-and-forth communication that previously slowed operations.
+                  The system allows admins to submit and manage course data
+                  through a dedicated dashboard, control user permissions by
+                  role, and provides real-time status visibility — eliminating
+                  the back-and-forth communication that previously slowed
+                  operations.
                 </p>
                 <p className="tw:text-neutral-500">
                   Built with Go (REST API), Next.js, and PostgreSQL.
                 </p>
 
-                <h3>
-                  For Testing
-                </h3>
-                <p>
-                  Email : test@gmail.com
-                </p>
-                <p>
-                  Password : 1234test
-                </p>
+                <h3>For Testing</h3>
+                <p>Email : test@gmail.com</p>
+                <p>Password : 1234test</p>
               </div>
               <div className="tw:mt-auto tw:flex tw:gap-2">
                 <a
@@ -242,17 +245,22 @@ const page = () => {
             </div>
 
             <div className="tw:bg-neutral-900 tw:p-4 tw:rounded-2xl tw:flex tw:flex-col tw:gap-3">
-              <span className="tw:font-semibold tw:uppercase tw:text-violet-400 tw:text-2xl">Korea-Lens
+              <span className="tw:font-semibold tw:uppercase tw:text-violet-400 tw:text-2xl">
+                Korea-Lens
                 <p className="tw:text-gray-500 tw:text-sm">
                   Techstack : Vite, Node.js, AWS, Gemini API key
                 </p>
               </span>
               <div className="tw:flex tw:flex-col tw:gap-2 tw:text-sm tw:text-neutral-300">
                 <p>
-                  A personal project built to explore the Gemini API — users can upload or capture a photo, and the app identifies the object in the image and returns its name in Thai, English, and Korean.
+                  A personal project built to explore the Gemini API — users can
+                  upload or capture a photo, and the app identifies the object
+                  in the image and returns its name in Thai, English, and
+                  Korean.
                 </p>
                 <p>
-                  Each result is displayed as a flashcard, making it a practical tool for language learning through everyday objects.
+                  Each result is displayed as a flashcard, making it a practical
+                  tool for language learning through everyday objects.
                 </p>
                 <p className="tw:text-neutral-500">
                   Built with Node.js (REST API) and Vite (Frontend).
@@ -261,6 +269,56 @@ const page = () => {
               <div className="tw:mt-auto tw:flex tw:gap-2">
                 <a
                   href="https://korea-lens.jrdproject.xyz/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="tw:rounded-lg tw:bg-violet-600 tw:px-4 tw:py-2 tw:text-sm tw:font-medium tw:text-white tw:transition-colors hover:tw:bg-violet-500"
+                >
+                  Live Demo →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </RevealOnScroll>
+
+      <RevealOnScroll>
+        <div className="tw:flex tw:flex-col tw:justify-center tw:items-center tw:min-h-screen tw:px-6 tw:mb-4 tw:md:mb-0">
+          <div className="tw:grid tw:grid-cols-1 tw:md:grid-cols-2 tw:w-full tw:max-w-4xl tw:gap-4">
+            <div className="tw:relative tw:aspect-3/4 tw:rounded-2xl tw:overflow-hidden">
+              <Image
+                src="/Screenshot 2026-06-06 170300.png"
+                alt="my-self"
+                fill
+                sizes="(max-width: 768px) 100vw, 448px"
+                className="tw:object-cover"
+              />
+            </div>
+
+            <div className="tw:bg-neutral-900 tw:p-4 tw:rounded-2xl tw:flex tw:flex-col tw:gap-3">
+              <span className="tw:font-semibold tw:uppercase tw:text-violet-400 tw:text-2xl">
+                Keep Pay
+                <p className="tw:text-gray-500 tw:text-sm">
+                  Techstack : Next.js, React, Golang, Postgresql
+                </p>
+              </span>
+              <div className="tw:flex tw:flex-col tw:gap-2 tw:text-sm tw:text-neutral-300">
+                <p>
+                  A personal project built to explore the Gemini API — users can
+                  upload or capture a photo, and the app identifies the object
+                  in the image and returns its name in Thai, English, and
+                  Korean.
+                </p>
+                <p>
+                  Each result is displayed as a flashcard, making it a practical
+                  tool for language learning through everyday objects.
+                </p>
+                <p className="tw:text-neutral-500">
+                  Built with Golang (REST API) and Next.js (Frontend).
+                </p>
+              </div>
+              <div className="tw:mt-auto tw:flex tw:gap-2">
+                <a
+                  href="https://keep-pay-frontend.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="tw:rounded-lg tw:bg-violet-600 tw:px-4 tw:py-2 tw:text-sm tw:font-medium tw:text-white tw:transition-colors hover:tw:bg-violet-500"
