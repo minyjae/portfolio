@@ -205,7 +205,7 @@ const page = () => {
                 </p>
 
                 <h3>For Testing</h3>
-                <p>Email : test@gmail.com</p>
+                <p>Email : admintest@example.com</p>
                 <p>Password : 1234test</p>
               </div>
               <div className="tw:mt-auto tw:flex tw:gap-2">
@@ -303,14 +303,7 @@ const page = () => {
               </span>
               <div className="tw:flex tw:flex-col tw:gap-2 tw:text-sm tw:text-neutral-300">
                 <p>
-                  A personal project built to explore the Gemini API — users can
-                  upload or capture a photo, and the app identifies the object
-                  in the image and returns its name in Thai, English, and
-                  Korean.
-                </p>
-                <p>
-                  Each result is displayed as a flashcard, making it a practical
-                  tool for language learning through everyday objects.
+                  A personal project built to track personal finances — log income and expenses to get a clear picture of how much you earn and how much you spend.
                 </p>
                 <p className="tw:text-neutral-500">
                   Built with Golang (REST API) and Next.js (Frontend).
@@ -319,6 +312,51 @@ const page = () => {
               <div className="tw:mt-auto tw:flex tw:gap-2">
                 <a
                   href="https://keep-pay-frontend.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="tw:rounded-lg tw:bg-violet-600 tw:px-4 tw:py-2 tw:text-sm tw:font-medium tw:text-white tw:transition-colors hover:tw:bg-violet-500"
+                >
+                  Live Demo →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </RevealOnScroll>
+
+      <RevealOnScroll>
+        <div className="tw:flex tw:flex-col tw:justify-center tw:items-center tw:min-h-screen tw:px-6 tw:mb-4 tw:md:mb-0">
+          <div className="tw:grid tw:grid-cols-1 tw:md:grid-cols-2 tw:w-full tw:max-w-4xl tw:gap-4">
+            <div className="tw:relative tw:aspect-3/4 tw:rounded-2xl tw:overflow-hidden">
+              <Image
+                src="/catice.png"
+                alt="my-self"
+                fill
+                sizes="(max-width: 768px) 100vw, 448px"
+                className="tw:object-cover"
+              />
+            </div>
+
+            <div className="tw:bg-neutral-900 tw:p-4 tw:rounded-2xl tw:flex tw:flex-col tw:gap-3">
+              <span className="tw:font-semibold tw:uppercase tw:text-violet-400 tw:text-2xl">
+                Catice (cat-ice, seem like off-ice)
+                <p className="tw:text-gray-500 tw:text-sm">
+                  Techstack : Vite, React, Golang, Postgresql, Redis, Websocket (Gorilla)
+                </p>
+              </span>
+              <div className="tw:flex tw:flex-col tw:gap-2 tw:text-sm tw:text-neutral-300">
+                <p>
+                  Catice is an all-in-one virtual office platform designed for remote teams who are tried of juggling multiple tools just to get work down.
+                  In a work-from-home setup, employees need to use many apps for work like google meeting, google chat or Slack for manage tasks or task tracking like Jira, Tello.
+                  Catice bring all of tools make in 1 platform. And beyond productivity with 2D virual office through their avatar walk around to servey and meeting other employees.
+                </p>
+                <p className="tw:text-neutral-500">
+                  Built with Golang (WEBSOCKET + REST API) and Vite (Frontend).
+                </p>
+              </div>
+              <div className="tw:mt-auto tw:flex tw:gap-2">
+                <a
+                  href="https://catice-frontend-production.up.railway.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="tw:rounded-lg tw:bg-violet-600 tw:px-4 tw:py-2 tw:text-sm tw:font-medium tw:text-white tw:transition-colors hover:tw:bg-violet-500"
