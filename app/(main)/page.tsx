@@ -268,7 +268,7 @@ const page = () => {
               </div>
               <div className="tw:mt-auto tw:flex tw:gap-2">
                 <a
-                  href="https://korea-lens.jrdproject.xyz/"
+                  href="https://learning-basic-full-stack-with-kore-omega.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="tw:rounded-lg tw:bg-violet-600 tw:px-4 tw:py-2 tw:text-sm tw:font-medium tw:text-white tw:transition-colors hover:tw:bg-violet-500"
