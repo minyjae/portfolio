@@ -210,7 +210,7 @@ const page = () => {
               </div>
               <div className="tw:mt-auto tw:flex tw:gap-2">
                 <a
-                  href="https://lifelong-ed.jrdproject.xyz/"
+                  href="https://cmu-lifelog-ed-demo.vercel.app/signin"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="tw:rounded-lg tw:bg-violet-600 tw:px-4 tw:py-2 tw:text-sm tw:font-medium tw:text-white tw:transition-colors hover:tw:bg-violet-500"
@@ -356,7 +356,7 @@ const page = () => {
               </div>
               <div className="tw:mt-auto tw:flex tw:gap-2">
                 <a
-                  href="https://catice-frontend-production.up.railway.app/"
+                  href="https://catice-frontend-production-eea6.up.railway.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="tw:rounded-lg tw:bg-violet-600 tw:px-4 tw:py-2 tw:text-sm tw:font-medium tw:text-white tw:transition-colors hover:tw:bg-violet-500"
